@@ -19,7 +19,8 @@
   <header class="w-full flex justify-between p-300 border-b border-b-border bg-background relative">
     Bridge Collective
 
-    <button id="menu-button" class="relative flex items-center justify-center">
+    <button aria-label="Open/close menu" aria-controls="nav-overlay" id="menu-button" class="relative flex items-center justify-center">
+      <span class="sr-only">Open/close menu</span>
       <img id="open-icon" src="/assets/images/icon-menu.svg" />
       <img id="close-icon" class="opacity-0 pointer-events-none absolute" src="/assets/images/icon-close.svg" />
     </button>
