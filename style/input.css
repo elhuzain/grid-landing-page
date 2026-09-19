@@ -8,12 +8,12 @@
 }
 
 :root {
-  --color-neutral-950: #000000;
-  --color-neutral-0: #ffffff;
-  --color-blue-700: #2854FE;
-  --color-blue-600: #325CFF;
-  --color-blue-400: #4784FF;
-  --color-blue-200: #C1CEFF;
+  --color-black: #000000;
+  --color-foreground: #ffffff;
+  --color-background: #2854FE;
+  --color-background-muted: #325CFF;
+  --color-border: #4784FF;
+  --color-foreground-muted: #C1CEFF;
 
   --spacing-0: 0px;
   --spacing-300: 24px;
@@ -23,13 +23,13 @@
 }
 
 @theme {
-  --color-neutral-950: var(--color-neutral-950);
-  --color-neutral-0: var(--color-neutral-0);
+  --color-black: var(--color-black);
+  --color-foreground: var(--color-foreground);
 
-  --color-blue-700: var(--color-blue-700);
-  --color-blue-600: var(--color-blue-600);
-  --color-blue-400: var(--color-blue-400);
-  --color-blue-200: var(--color-blue-200);
+  --color-background: var(--color-background);
+  --color-background-muted: var(--color-background-muted);
+  --color-border: var(--color-border);
+  --color-foreground-muted: var(--color-foreground-muted);
 
   --spacing-0: var(--spacing-0);
   --spacing-300: var(--spacing-300);
@@ -38,7 +38,7 @@
   --spacing-700: var(--spacing-700);
 }
 
-@utility text-present-1 {
+@utility text-preset-1 {
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
@@ -46,7 +46,7 @@
   letter-spacing: -2px;
 }
 
-@utility text-present-2 {
+@utility text-preset-2 {
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -98,26 +98,8 @@
   letter-spacing: -0.25px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font: inherit;
-}
-
 body {
   font-family: inter-variable;
-  background-color: var(--color-blue-700);
-  color: var(--color-neutral-0);
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  background: white;
-  padding-block: 4px;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }

@@ -13,19 +13,19 @@
   <link rel="stylesheet" href="/style/style.css">
 </head>
 
-<body>
+<body class="flex flex-col min-h-dvh">
 
   <!-- Nav -->
-  <header>
+  <header class="w-full flex justify-between p-300 border-b border-b-border">
     Bridge Collective
 
     <button>
       <img src="/assets/images/icon-menu.svg" />
-      <img src="/assets/images/icon-close.svg" />
+      <img class="hidden" src="/assets/images/icon-close.svg" />
     </button>
 
     <!-- Menu panel — hidden until the hamburger is activated -->
-    <nav>
+    <nav class="hidden">
       <ul>
         <li>
           <a>
@@ -56,66 +56,70 @@
     </nav>
   </header>
 
-  <main>
+  <main class="flex flex-col lg:flex-row justify-between flex-1 xl:border-x border-x-border max-w-360 w-full mx-auto">
     <!-- Hero -->
-    <section class="hero">
-      <h1>A classroom for every child.</h1>
+    <section class="px-400 sm:p-600 py-700 flex">
+      <div class="min-h-110 flex flex-col justify-center space-y-300 sm:space-y-10">
+        <h1 class="text-preset-2 sm:text-preset-1 max-w-90">A classroom for every child.</h1>
 
-      <p>We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a
-        graduate
-        tomorrow.</p>
+        <p class="text-foreground-muted text-preset-5 max-w-99.25">We fund the schools, train the teachers, and measure
+          what works — so every child we reach today becomes a
+          graduate
+          tomorrow.</p>
+      </div>
     </section>
 
     <!-- Stats -->
-    <section class="stats">
-      <article>
-        <div>
+    <section class="grid sm:grid-cols-2 xl:min-w-200">
+      <article class="hover:bg-background-muted lg:border-t-0 transition-colors border-t border-border sm:border-l sm:border-border p-300 min-h-82 flex flex-col">
+        <div class="flex justify-between items-center">
           <img src="/assets/images/icon-sparkle.svg" />
-          <span>2.4M</span>
+          <span class="text-preset-3">2.4M</span>
         </div>
-        <h2>Students reached</h2>
-        <p>Across 31 countries since 2011.</p>
+        <h2 class="mt-auto text-preset-5-medium">Students reached</h2>
+        <p class="text-preset-6 text-foreground-muted">Across 31 countries since 2011.</p>
       </article>
 
-      <article>
-        <div>
+      <article class="hover:bg-background-muted lg:border-t-0 transition-colors border-t border-border sm:border-l sm:border-border p-300 min-h-82 flex flex-col">
+        <div class="flex justify-between items-center">
           <img src="/assets/images/icon-plus.svg" />
-          <span>1,284</span>
+          <span class="text-preset-3">1,284</span>
         </div>
-        <h2>Schools partnered</h2>
-        <p>In 14 countries, from Kenya to Guatemala.</p>
+        <h2 class="mt-auto text-preset-5-medium">Schools partnered</h2>
+        <p class="text-preset-6 text-foreground-muted">In 14 countries, from Kenya to Guatemala.</p>
       </article>
 
-      <article>
-        <div>
+      <article class="hover:bg-background-muted transition-colors border-t border-border sm:border-l sm:border-border p-300 min-h-82 flex flex-col">
+        <div class="flex justify-between items-center">
           <img src="/assets/images/icon-arrow-right.svg" />
-          <span>38K</span>
+          <span class="text-preset-3">38K</span>
         </div>
-        <h2>Teachers trained</h2>
-        <p>Equipped with modern tools and methodology.</p>
+        <h2 class="mt-auto text-preset-5-medium">Teachers trained</h2>
+        <p class="text-preset-6 text-foreground-muted">Equipped with modern tools and methodology.</p>
       </article>
 
-      <article>
-        <div>
+      <article class="hover:bg-background-muted transition-colors border-t border-border sm:border-l sm:border-border p-300 min-h-82 flex flex-col">
+        <div class="flex justify-between items-center">
           <img src="/assets/images/icon-trending-up.svg" />
-          <span>3.1×</span>
+          <span class="text-preset-3">3.1×</span>
         </div>
-        <h2>Graduation lift</h2>
-        <p>Partner schools outperform national averages 3x.</p>
+        <h2 class="mt-auto text-preset-5-medium">Graduation lift</h2>
+        <p class="text-preset-6 text-foreground-muted">Partner schools outperform national averages 3x.</p>
       </article>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2026 Bridge Collective</p>
-    <p>Registered charity 12345678</p>
+  <footer class="flex justify-between sm:flex-row flex-col p-300 border-t border-border">
+    <p class="text-preset-6">© 2026 Bridge Collective</p>
+    <p class="text-preset-6">Registered charity 12345678</p>
   </footer>
 
-  <div class="attribution">
-    Challenge by <a target="_blank" href="https://www.frontendmentor.io/challenges/grid-landing-page">Frontend
+  <div class="bg-white text-xs text-black text-center py-1">
+    Challenge by <a class="text-background font-bold" target="_blank"
+      href="https://www.frontendmentor.io/challenges/grid-landing-page">Frontend
       Mentor</a>.
-    Coded by <a target="_blank" href="https://elhuzain.com">elhuzain</a>.
+    Coded by <a class="text-background font-bold" target="_blank" href="https://elhuzain.com">elhuzain</a>.
   </div>
 </body>
 
