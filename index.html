@@ -16,51 +16,55 @@
 <body class="flex flex-col min-h-dvh">
 
   <!-- Nav -->
-  <header class="w-full flex justify-between p-300 border-b border-b-border bg-background relative">
-    Bridge Collective
+  <header class="w-full z-100  border-b border-b-border bg-background">
+    <div class="flex justify-between p-300">
+      Bridge Collective
 
-    <button aria-label="Open/close menu" aria-controls="nav-overlay" id="menu-button" class="relative flex items-center justify-center">
-      <span class="sr-only">Open/close menu</span>
-      <img alt="" id="open-icon" src="/assets/images/icon-menu.svg" />
-      <img alt="" id="close-icon" class="opacity-0 pointer-events-none absolute" src="/assets/images/icon-close.svg" />
-    </button>
+      <button aria-label="Open/close menu" aria-controls="nav-overlay" id="menu-button"
+        class="relative flex items-center justify-center">
+        <span class="sr-only">Open/close menu</span>
+        <img alt="" id="open-icon" src="/assets/images/icon-menu.svg" />
+        <img alt="" id="close-icon" class="opacity-0 pointer-events-none absolute"
+          src="/assets/images/icon-close.svg" />
+      </button>
+    </div>
 
     <!-- Menu panel — hidden until the hamburger is activated -->
-    <nav id="nav-overlay" class="opacity-0 z-100 pointer-events-none absolute bottom-0 translate-y-full border-t border-t-border right-0 w-full h-dvh bg-black/30">
-      <ul id="nav" class="bg-background ms-auto sm:max-w-120 sm:text-end sm:h-full p-400 text-center">
-        <li>
-          <a href="#" class="nav-link text-preset-4">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-preset-4">
-            Our work
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-preset-4">
-            Partners
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-preset-4">
-            Annual Report
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-preset-4">
-            Donate
-          </a>
-        </li>
-      </ul>
+    <nav id="nav-overlay"
+      class="opacity-0 z-20 pointer-events-none fixed inset-0 border-t border-t-border w-full h-dvh bg-black/30">
+        <ul id="nav" class="bg-background ms-auto sm:max-w-120 sm:text-end sm:h-full p-400 text-center">
+          <li>
+            <a href="#" class="nav-link text-preset-4">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-preset-4">
+              Our work
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-preset-4">
+              Partners
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-preset-4">
+              Annual Report
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-preset-4">
+              Donate
+            </a>
+          </li>
+        </ul>
     </nav>
   </header>
 
   <main class="flex-1 w-full flex mx-auto">
 
-    <div
-      class="flex flex-col my-auto lg:flex-row justify-between flex-1 max-w-360 w-full mx-auto">
+    <div class="flex flex-col my-auto lg:flex-row justify-between flex-1 max-w-360 w-full mx-auto">
       <!-- Hero -->
       <section id="hero" class="px-400 sm:p-600 py-700 flex">
         <div class="min-h-110 flex flex-col justify-center space-y-300 sm:space-y-10">
