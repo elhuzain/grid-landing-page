@@ -16,8 +16,8 @@
 <body class="flex flex-col min-h-dvh">
 
   <!-- Nav -->
-  <header class="w-full z-100  border-b border-b-border bg-background">
-    <div class="flex justify-between p-300">
+  <header class="sticky top-0 z-100">
+    <div class="flex justify-between p-300 w-full bg-background z-100 relative border-b border-b-border">
       Bridge Collective
 
       <button aria-label="Open/close menu" aria-controls="nav-overlay" id="menu-button"
@@ -31,7 +31,7 @@
 
     <!-- Menu panel — hidden until the hamburger is activated -->
     <nav id="nav-overlay"
-      class="opacity-0 z-20 pointer-events-none fixed inset-0 border-t border-t-border w-full h-dvh bg-black/30">
+      class="opacity-0 z-20 pt-18 pointer-events-none fixed inset-0 border-t border-t-border w-full h-dvh bg-black/30">
         <ul id="nav" class="bg-background ms-auto sm:max-w-120 sm:text-end sm:h-full p-400 text-center">
           <li>
             <a href="#" class="nav-link text-preset-4">
