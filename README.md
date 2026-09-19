@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/elhuzain/grid-landing-page)
-- Live Site URL: [Add live site URL here](https://grid-landing-page.elhuzain.com)
+- Solution URL: [GitHub Source Code](https://github.com/elhuzain/grid-landing-page)
+- Live Site URL: [grid-landing-page.elhuzain.com](https://grid-landing-page.elhuzain.com)
 
 ## Built with
 
