@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+@font-face {
+  font-family: inter-variable;
+  src: url("/assets/fonts/inter/inter-variable.ttf");
+}
+
+:root {
+  --color-neutral-950: #000000;
+  --color-neutral-0: #ffffff;
+  --color-blue-700: #2854FE;
+  --color-blue-600: #325CFF;
+  --color-blue-400: #4784FF;
+  --color-blue-200: #C1CEFF;
+
+  --spacing-0: 0px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-600: 48px;
+  --spacing-700: 56px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: inter-variable;
+  background-color: var(--color-blue-700);
+  color: var(--color-neutral-0);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: white;
+  padding-block: 4px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
